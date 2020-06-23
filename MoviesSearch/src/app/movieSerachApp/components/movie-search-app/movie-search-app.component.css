@@ -1,0 +1,127 @@
+.main {
+/*border: 1px solid;*/
+width: 80%;
+height: calc(100vh - 50px);
+align-self: center;
+margin: auto;
+font-family: Arial, Helvetica, sans-serif;
+}
+.title {
+    width:60%;
+  /*  border: 1px solid;*/
+}
+.frame {
+  /*  border: 1px solid green;*/
+    margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+}
+.right-contents{
+   font-size: 16px;
+    width: 50%;
+    /*border:1px solid red;*/
+    margin-right: 7%;
+}
+.left-contents{
+    font-size: 16px;
+    width: 43%;
+  /*  border:1px solid red;*/
+}
+.input-box{
+    width: 80%;
+    height: 32px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+}
+.input-div{
+    width: 90%;
+    border:1px solid gray;
+    height: 100%;
+}
+input {
+    width: 98%;
+    border:0 solid white;
+    height: 92%;
+}
+input:focus, input.form-control:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.star-icon{
+    width: 10%;
+    height: 100%;
+    border: 1px solid gray;
+    text-align: center;
+}
+.results{
+    margin-top: 40px;
+  /*  border: 1px solid red;*/
+    width: 100%;;
+}
+.result-details{
+    width: 100%;
+    height: 460px;
+  /*  border: 1px solid blue;*/
+    display: flex;
+    flex-direction: column;
+
+
+    overflow: scroll;
+    overflow-y: auto;
+    border: 1px solid gray;
+}
+.video-info{
+    width: 100%;
+    min-height: 16.5% !important;
+    border: 1px solid gray;
+    cursor: pointer;
+    background-color: #E8E8E8;
+}
+.detail-video {
+    margin: 18px;
+    border-bottom: 1px soli gray; 
+}
+.favorit-box {
+        width: 100%;
+        height: 32px;
+       /* border: 1px solid;*/
+        display: flex;
+        flex-direction: row;
+       /* flex-wrap: wrap;*/
+}
+.fv {
+    width: 30%;
+    height: 100%;
+    margin: 4px;
+    border: 2px solid gray;
+    cursor: pointer;
+    background-color: #ADD8E6;
+}
+.fav-text{
+    margin-top: 6px;
+    margin-left: 10px;
+    color: gray;
+}
+.picture {
+    width: 100%;
+    height: 90%;
+    border: 1px solid gray;
+}
+.same-info {
+    width: 100%;
+    height: 10%;
+    border: 1px solid gray;
+    background-color: gray;
+}
+.movie-details{
+    width: 300px;
+    height: 470px;
+  /*  border: 1px solid blue;*/
+    display: flex;
+    flex-direction: column;
+}

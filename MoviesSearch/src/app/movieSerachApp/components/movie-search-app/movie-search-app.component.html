@@ -1,0 +1,43 @@
+<div class="main">
+    <div class="title"><h3>Movies Search Application </h3></div>
+    <div class="frame">
+        <div class="right-contents">
+            <p>Search by actor/actress</p>
+            <div class="input-box">
+                <div class="input-div">
+                <input type="text" id="value" name="value" [(ngModel)]="value" (ngModelChange)="searchVideo($event)" placeholder="Search..." />
+                </div>
+                <div class="star-icon"><div (click)="putInFavorit()">
+                    <img [src]="icon_star" alt="No picture" width="auto" height="auto">
+                </div></div>
+            </div>
+            
+            <div class="results">
+                <p><b>Search results / films, series, etc</b></p>
+                
+                <div class="result-details">
+                    <!-- <p *ngIf="detail_video.length == 0 || detail_video == undefined">No result</p> -->
+                    <div class="video-info" *ngFor="let video of detail_video" (click)="getVideoDetail(video)"><div class="detail-video">{{video.Title}}</div></div>
+                </div>               
+            </div>
+
+
+        </div>
+        <div class="left-contents">
+            <p>Your 3 most favorite searches</p>
+            <div class="favorit-box" *ngIf="sortedFavorits.length == 0" style="font-size: 12px;">(You have no favorits searches)</div>
+            <div class="favorit-box" *ngIf="sortedFavorits.length > 0">
+                <div class="fv" *ngFor="let fav of sortedFavorits" (click)="incrementFavoritCount(fav)"><div class="fav-text">{{fav.name}}({{fav.count}})</div></div>
+            </div>
+            <div class="results" *ngIf="video_info != undefined">
+                <p><b>Result 1 detail</b></p>
+                <div class="movie-details">
+                    <div class="picture">
+                        <img src="{{video_info.Poster}}" alt="No picture" width="300px" height="100%">
+                    </div>
+                    <div class="same-info"><div class="detail-video">{{video_info.Type}} / {{video_info.Year}}</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
